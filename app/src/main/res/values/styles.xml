@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/googleBlueColor</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+        <!--       <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>-->
+
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/main_background_color</item>
+        <item name="colorOnSecondary">@color/main_background_color</item>
+        <item name="colorOnSurface">@color/main_background_color</item>
+    </style>
+
+    <style name="AppTheme.GoogleButton" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/googleYellowColor</item>
+    </style>
+
+    <style name="AppTheme.NormalButton" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="ToolbarTitleText" parent="Widget.MaterialComponents.Toolbar">
+        <item name="title">center</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="iconGenText">
+        <item name="android:textColor">@color/main_orange_light_color</item>
+    </style>
+
+    <style name="styleTextInputEditText" parent="Base.Widget.MaterialComponents.TextInputEditText">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        .....
+    </style>
+
+</resources>

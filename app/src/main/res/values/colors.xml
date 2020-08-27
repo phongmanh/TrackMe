@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary1">#009ADA</color>
+    <color name="colorPrimary">#07cd59</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="backgroundGrey">#F9FAF8</color>
+    <color name="backgroundGrey1">#E9EBEE</color>
+
+    <color name="googleRedColor">#DB4437</color>
+    <color name="googleBlueColor">#4285F4</color>
+    <color name="googleGreenColor">#0F9D58</color>
+    <color name="googleYellowColor">#F4B400</color>
+
+
+    <color name="textColorPrimary">#05c555</color>
+    <color name="colorYellow">#FFCC28</color>
+    <color name="colorRed">#f83636</color>
+    <color name="colorDark1">#37474e</color>
+    <color name="colorDark2">#607c8a</color>
+    <color name="colorDark3">#90a4ae</color>
+    <color name="colorDark4">#ced8dc</color>
+
+
+    <color name="toolbar_background_color">#354FA3</color>
+    <color name="item_deselected_color">#cbb39f</color>
+    <color name="item_selected_color">#FFFFFF</color>
+    <color name="main_orange_light_color">#f5e44f</color>
+    <color name="main_background_color">#354FA3</color>
+    <color name="disabled_color">#cccccc</color>
+    <color name="main_label_color">#ffff</color>
+    <color name="main_text_hint_color">#d8d8d8</color>
+    <color name="un_focus_background_color">#CCCCCC</color>
+    <color name="colorGrey">#808080</color>
+    <color name="toolbar_title_color">#FFFFFF</color>
+    <color name="map_draw_line_color">#FFCC28</color>
+    <color name="black_color">#696969</color>
+    <color name="user_line_color">#31C5F5</color>
+    <color name="text_grey_color">#bbbec0</color>
+    <color name="login_background_grey_color">#f8fcfd</color>
+    <color name="login_hint_text_color">#cecfd0</color>
+    <color name="blue_dark_color">#46a5d2</color>
+    <color name="backgroundGrey2">#eeeeee</color>
+
+</resources>
