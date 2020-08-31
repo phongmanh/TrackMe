@@ -2,7 +2,9 @@ package com.manhnguyen.trackme.di.component
 
 import android.content.Context
 import com.manhnguyen.trackme.ApplicationController
+import com.manhnguyen.trackme.presentation.recording.RecordFragment
 import com.manhnguyen.trackme.di.module.*
+import com.manhnguyen.trackme.presentation.history.TrackingHistoryFragment
 import com.manhnguyen.trackme.presentation.activities.MainActivity
 import dagger.BindsInstance
 import dagger.Component
@@ -29,5 +31,7 @@ interface AppComponent {
 
 
     fun inject(mainActivity: MainActivity)
+    fun inject(mapsFragment: RecordFragment)
+    fun inject(historyFragment: TrackingHistoryFragment)
     fun inject(applicationController: ApplicationController)
 }

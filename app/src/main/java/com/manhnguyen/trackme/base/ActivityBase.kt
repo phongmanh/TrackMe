@@ -40,11 +40,11 @@ abstract class ActivityBase : AppCompatActivity() {
         }
     }
 
-    protected fun replaceFragment(isAdmin: Boolean, fragment: Fragment, newTag: String) {
+    protected fun replaceFragment(fragment: Fragment, newTag: String) {
         try {
             val ft = supportFragmentManager.beginTransaction()
+            ft.setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right);
             ft.replace(R.id.mainContainer, fragment, newTag).commit()
-            currentChildFragmentTag = null
 
         } catch (e: Exception) {
             e.printStackTrace()
@@ -56,10 +56,6 @@ abstract class ActivityBase : AppCompatActivity() {
         ft.add(R.id.mainContainer, fragment, tag)
         ft.addToBackStack(null)
         ft.commit()
-    }
-
-    protected fun isPerformDestroy(): Boolean {
-        return currentChildFragmentTag == null
     }
 
 }

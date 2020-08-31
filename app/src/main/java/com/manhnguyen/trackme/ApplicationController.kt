@@ -6,7 +6,7 @@ import androidx.multidex.MultiDexApplication
 import com.manhnguyen.trackme.common.SharedPreferenceHelper
 import com.manhnguyen.trackme.di.component.AppComponent
 import com.manhnguyen.trackme.di.component.DaggerAppComponent
-import com.manhnguyen.trackme.presentation.UncaughtExceptionHandler
+import com.manhnguyen.trackme.system.UncaughtExceptionHandler
 import com.jakewharton.threetenabp.AndroidThreeTen
 import dagger.android.*
 import javax.inject.Inject
@@ -28,7 +28,11 @@ class ApplicationController : MultiDexApplication(), HasAndroidInjector, Lifecyc
         AndroidThreeTen.init(this)
         appComponent = DaggerAppComponent.factory().create(this)
         appComponent.inject(this)
-        Thread.setDefaultUncaughtExceptionHandler(UncaughtExceptionHandler(this))
+        Thread.setDefaultUncaughtExceptionHandler(
+            UncaughtExceptionHandler(
+                this
+            )
+        )
         SharedPreferenceHelper.getInstance(this)
         init()
     }

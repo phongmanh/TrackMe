@@ -4,130 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundGrey1"
     tools:context=".presentation.activities.MainActivity">
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/main_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/toolbar_background_color"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:visibility="gone"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:columnCount="3"
-            android:orientation="horizontal"
-            android:paddingTop="7dp"
-            android:paddingEnd="@dimen/dm_20">
-
-            <ImageView
-                android:id="@+id/siteInfoBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_row="0"
-                android:layout_rowSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_gravity="start|center"
-                android:src="@drawable/ic_place_white_36dp" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/siteTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:gravity="center|bottom"
-                android:maxLines="1"
-                android:text="@string/site_map_label"
-                android:textColor="@color/main_orange_light_color"
-                android:textStyle="bold" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/siteAddress"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:gravity="center|top"
-                android:maxLines="1"
-                android:text="@string/admin_label"
-                android:textColor="@color/main_orange_light_color" />
-
-            <ImageView
-                android:id="@+id/recordBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_row="0"
-                android:layout_rowSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_gravity="end|center"
-                android:src="@drawable/ic_play_circle_white_36dp" />
-
-        </GridLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="end">
-
-
-        </LinearLayout>
-
-    </com.google.android.material.appbar.MaterialToolbar>
-
-
-    <FrameLayout
-        android:id="@+id/childFragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/mainNavigation"
-        android:fitsSystemWindows="true" >
-    </FrameLayout>
-
 
     <FrameLayout
         android:id="@+id/mainContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/mainNavigation"
-        android:fitsSystemWindows="true">
-        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="gone" />
+        android:fitsSystemWindows="true" />
 
-    </FrameLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/mainNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/toolbar_background_color"
-        app:itemIconTint="@drawable/main_navigation_item_colors"
-        app:itemRippleColor="@color/googleYellowColor"
-        app:itemTextColor="@drawable/main_navigation_item_colors"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/main_navigation_menu" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
 </RelativeLayout>

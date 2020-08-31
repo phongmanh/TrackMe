@@ -55,7 +55,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.manhnguyen.codebase"
+        applicationId "com.manhnguyen.trackme"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -67,12 +67,12 @@ android {
     flavorDimensions "version"
     productFlavors {
         prod {
-            applicationId "com.manhnguyen.codebase"
+            applicationId "com.manhnguyen.trackme"
             versionCode 1
             versionName "1.0"
         }
         dev {
-            applicationId "com.manhnguyen.codebase"
+            applicationId "com.manhnguyen.trackme"
             versionCode 1
             versionName "1.0"
         }

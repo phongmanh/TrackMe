@@ -22,37 +22,9 @@ class DetectedActivitiesIntentService : IntentService("DetectService") {
             messenger = bundle.get("MESSENGER") as Messenger
         }
 
-/*        if (ActivityTransitionResult.hasResult(intent)) {
-            val result = ActivityTransitionResult.extractResult(intent) as ActivityTransitionResult
-            result.transitionEvents?.let { events ->
-                messenger?.let {
-                    if (!events.isNullOrEmpty()) {
-                        val msg = Message.obtain()
-                        msg.arg1 = events[events.size - 1].activityType
-                        messenger.send(msg)
-                    }
-                    *//*       for (item in events){
-                               val msg = Message.obtain()
-                               msg.arg1 = item.activityType
-                               messenger.send(msg)
-                           }*//*
-                }
-            }
-        } else*/
-
-        /*
-        *
-        *   WALKING (confidence = 80)
-            RUNNING (confidence = 20)
-            IN_VEHICLE (confidence = 10)
-        * */
-
         val result = ActivityRecognitionResult.extractResult(intent)
         val probably = result.mostProbableActivity
-        /*if (probably.confidence >= 50) {*/
             currentActivity = probably.type
-        /*}*/
-
         messenger?.let {
             val msg = Message.obtain()
             msg.arg1 = currentActivity

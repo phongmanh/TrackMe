@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Codebase</string>
+    <string name="app_name">TrackMe</string>
     <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -118,7 +118,7 @@
     <string name="select_company_hint">Select company</string>
     <string name="start_at_label">Start at:</string>
     <string name="checkpoint_x_label">Checkpoint X</string>
-    <string name="distance_label">Distance:</string>
+    <string name="distance_label">Distance</string>
     <string name="check_in_label">Check-in</string>
     <string name="end_at_label">Stop at:</string>
     <string name="user_profile_lable">User Profile</string>
@@ -127,4 +127,6 @@
     <string name="confirm_new_password">Confirm new password</string>
     <string name="change_maps_view_tooltip">Change maps view</string>
     <string name="home_label">Home</string>
+    <string name="agv_speed_label">Avg. Speed</string>
+    <string name="speed_label">Speed</string>
 </resources>

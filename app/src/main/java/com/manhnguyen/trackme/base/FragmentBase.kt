@@ -1,13 +1,14 @@
 package com.manhnguyen.trackme.base
 
+import android.app.ProgressDialog
 import android.view.View
 import android.view.WindowManager
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import me.zhanghai.android.materialprogressbar.MaterialProgressBar
 
 
 abstract class FragmentBase : Fragment() {
-
 
     protected fun showProgressBar(progressBar: MaterialProgressBar) {
         try {
@@ -25,6 +26,7 @@ abstract class FragmentBase : Fragment() {
         try {
             activity?.window?.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
             progressBar.visibility = View.GONE
+
         } catch (it: Exception) {
             it.printStackTrace()
         }

@@ -22,7 +22,7 @@ class LocationViewModel @Inject constructor() : ViewModel() {
     }
 
     fun getUserMoving(): Boolean {
-        return true //_userMoving.get()
+        return true//_userMoving.get()
     }
 
     fun getLocationData() = _currentLocationData

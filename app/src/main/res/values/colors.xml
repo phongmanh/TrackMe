@@ -8,6 +8,8 @@
     <color name="backgroundGrey">#F9FAF8</color>
     <color name="backgroundGrey1">#E9EBEE</color>
 
+    <color name="black">#000000</color>
+
     <color name="googleRedColor">#DB4437</color>
     <color name="googleBlueColor">#4285F4</color>
     <color name="googleGreenColor">#0F9D58</color>
