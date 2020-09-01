@@ -43,7 +43,12 @@ abstract class ActivityBase : AppCompatActivity() {
     protected fun replaceFragment(fragment: Fragment, newTag: String) {
         try {
             val ft = supportFragmentManager.beginTransaction()
-            ft.setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right);
+            ft.setCustomAnimations(
+                R.anim.slide_in_left_enter,
+                R.anim.slide_in_left_exit,
+                R.anim.slide_out_right_enter,
+                R.anim.slide_out_right_exit
+            )
             ft.replace(R.id.mainContainer, fragment, newTag).commit()
 
         } catch (e: Exception) {
