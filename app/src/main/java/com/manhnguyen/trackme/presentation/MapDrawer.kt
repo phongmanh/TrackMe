@@ -67,10 +67,6 @@ class MapDrawer constructor(val context: Context) {
     ): Bitmap? {
         val bitmap =
             Bitmap.createBitmap(widthPixels, heightPixels, Bitmap.Config.ARGB_8888)
-        val filter: ColorFilter = PorterDuffColorFilter(
-            ContextCompat.getColor(context, R.color.user_line_color),
-            PorterDuff.Mode.SRC_IN
-        )
         val canvas = Canvas(bitmap)
         drawable.setBounds(0, 0, widthPixels, heightPixels)
         drawable.draw(canvas)
@@ -88,9 +84,9 @@ class MapDrawer constructor(val context: Context) {
             val polylineOptions = PolylineOptions().width(WIDTH).clickable(false).addAll(points)
 
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M)
-                polylineOptions.color(context.resources.getColor(R.color.main_background_color))
+                polylineOptions.color(context.resources.getColor(R.color.colorRed))
             else
-                polylineOptions.color(context.getColor(R.color.main_background_color))
+                polylineOptions.color(context.getColor(R.color.colorRed))
 
             oldPolyline?.remove()
             return googleMap?.addPolyline(polylineOptions)

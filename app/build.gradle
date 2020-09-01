@@ -97,7 +97,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            def project = "codebase"
+            def project = "trackme"
             def SEP = "_"
             def flavor = variant.productFlavors[0].name
             def buildType = variant.buildType.name
